@@ -1,0 +1,90 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size:62,5% ;
+
+}
+
+header{
+    width: 100vw;
+    height: 15vh;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family:  'IM Fell English SC', serif;
+}
+
+
+#botonera_principal{
+    width: 100%;
+    height: 55%;
+    background-color: aqua; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+#botonera_principal ul{
+    list-style-type: none;
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul .flex-item{
+   background-color: blueviolet;
+   border: 1px solid black; 
+   height: 25%;
+   margin: 0.5em;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.marca{
+    border-radius: 50%;
+
+}
+
+#logo-marca{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1{
+    margin: 0.5em;
+    font-family:  'IM Fell English SC', serif;
+}
+
+nav ul li a:hover{
+  background-color: grey;
+  color:black; 
+}
+
+@media all and (max-width:600px){ 
+
+    header{
+        height: 25vh;
+    }
+
+    #botonera_principal ul{
+        flex-direction: column;
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+}
+.social-media a img{
+    width: 3em;
+    height: 3em;
+}
+
+#marca-agua{ 
+    font-weight: bold;
+}
