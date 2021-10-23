@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size:62,5% ;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+/* El header es flex (hijos:logo-marca y botonera-principal)*/
+.centrado{
+	margin: 0 auto;
+	padding: 0 0.8em;
+}
+
+
+
+
+
+ h3{
+    text-align: justify;
+    font-size: 200%;
+    margin-top: 1em;
+    margin-bottom: 0;
+    margin-left : 0.5em;
+    
+} 
+
+/* Animación. Hover Navp principal *
+
+/* Puntos de Corte */
+@media all and (max-width:600px) and (max-width:1023px){ 
+
+
+
+    .content {
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: center;
+    } 
+
+    .row {
+    flex-direction: column;
+    flex-basis: 100%;
+    align-items: center;
+    } 
+
+}
+
+
+.row{
+    display:flex;
+    margin:0;
+}
+
+.row_map{
+    display:flex;
+    margin:1em;
+}
+
+.row_column {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    margin:0em;
+
+}
+
+.column1{
+    flex:60%;
+    margin:1em;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+.column1 img{
+    height:100%;
+    width:100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.column2{
+    flex:40%;
+    margin:1em;
+    background-color: rgba(129, 212, 250);
+    align-items: center;
+   
+}
+
+.column2 h3{
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    margin-right : 0.5em;
+    
+}
+
+.label{
+    flex:50%;
+    margin:1em;
+}
+
+/* .ind-mapa {
+    position: relative;
+    display: flex;
+    height:100%;
+    flex-direction: row;
+    margin:0.5em;
+  } */
+  
+  /* .ind-mapa>* {
+    flex: 0 1 auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 3px #ccc;
+    z-index: 1;
+  } */
+  
+  /* .resp-iframe {
+    flex: 0 0 auto;
+    margin-right: 20px;
+  } */
+
+.social-media a img{
+   width: 3em;
+   height: 3em;
+}
+
+
+
+#falla{
+    display:flex;
+    font-size: small;
+    font-style: italic;
+}
+
+#falla2{
+    display:flex;
+    font-size: small;
+    font-style: italic;
+}
+
+#falla3{
+    display:flex;
+    font-size: small;
+    font-style: italic;
+}
+
+
+.data{
+    display:flex;
+    margin:1em;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+.content {
+    display: flex;
+    padding:0.5em;
+    margin: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}   
+    
+   
+
+.content div img {
+    margin: 20px;
+    display: flex;
+    float: left;
+    width:  50px;
+    height: 50px;
+    object-fit: cover;
+    padding:0.5em;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+  }
+
+  .content h3{
+      justify-content: center;
+      font-weight: 20px;
+      margin:0;
+      margin-right: 20px;
+      flex-wrap: wrap;
+      display: flex;
+  }
+  .content p {
+      margin: 0;
+      justify-content: center;
+      font-weight: 40px; 
+      margin-right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    
+     
+    }
+
+
+    .figs{
+
+        display:flex;
+        align-items:center;
+    }
+    
+    .text_figs{
+    
+        display:flex;
+        justify-content:center;
+        flex-direction: column;
+       
+         
+    }
+
+ /* FOrumulario */
+ 
+
+ .myForm {
+    display: flex;
+    border-radius: 3px;
+    padding: 1.8em;
+    flex-direction: column;
+  }
+  .message {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  .message > textarea {
+   flex: 1; 
+   min-width: 18em;
+   border:0;
+  }
+
+  .message input {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 0;
+    
+  }
+  
+  .contact {
+    flex: 1; 
+    order: 1;
+    margin-right: 2em; 
+  }
+
+  .contact input {
+    width: 100%;
+    border: 0;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+
+#boton{
+    text-align: right;
+    font-weight: bold;
+    margin-right: 2em;
+}
+
+#requerido{
+    font-size: 75%;
+    font-weight: normal;
+    font-style: italic;
+    margin-left: 2em;
+
+}
+
+

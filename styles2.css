@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size:62,5% ;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+/* El header es flex (hijos:logo-marca y botonera-principal)*/
+
+
+.centrado{
+	margin: 0 auto;
+	padding: 0 0.8em;
+}
+
+
+
+
+ h3{
+    text-align: justify;
+    font-size: 200%;
+    margin-top: 1em;
+    margin-bottom: 0;
+    margin-left : 0.5em;
+    
+} 
+
+p{
+    text-align: justify;
+    font-size: 200%;
+    margin-top: 1em;
+    margin-bottom: 0;
+    margin-left : 0.5em;
+    
+} 
+
+#emphasis{
+    font-style: italic;
+  }
+
+
+#more {
+    display: none;
+}
+#more2 {
+    display: none;
+}
+#more3 {
+    display: none;
+}
+#more4 {
+    display: none;
+}
+
+
+
+ section article div h3{
+    font-weight: bolder;
+    text-align: justify;
+     font-size: 200%; 
+    margin-top: 1em;
+    margin-bottom: 0;
+    margin-left : 0.5em;
+    
+} 
+ 
+
+
+ article div button{
+    align-self:flex-start;
+    margin-top : 0.5em;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ article div button:hover { /*Lo que sucede cuando paso el mouse por encima*/
+    background: white;
+    color: black;
+    padding: 5px 5px;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+    font-weight: bold;
+    
+} 
+ 
+
+ /* Puntos de Corte */
+
+
+
+
+.content {
+    display: flex;
+    padding:0.5em;
+    border : 10px solid rgba(129, 212, 250);
+    margin: 20px;
+    
+  }
+  
+
+.content div img {
+    margin-right: 10px;
+    display: block;
+    float: left;
+    width:  150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 30%;
+    padding:1em;
+    justify-content: center;
+  }
+
+  .content h3
+  {
+    display: flex;
+    margin: 0;
+    font-weight: 40px;
+  }
+
+
+  .content p 
+  {
+      margin: 0;
+      justify-content: center;
+      font-size: 150%;
+    }
+
+.figs{
+
+    display:inline-flex;
+    align-items:center;
+}
+
+.text_figs{
+
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+     
+}
+
+
+
+
