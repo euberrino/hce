@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contacto - AID</title>
-    <link rel="icon" type="image/png" href="icons/1-25_icon-icons.com_65706.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="icons/portafolio.PNG">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Nunito+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles3.css">
 </head>
 <body>
     <header>
@@ -20,35 +21,120 @@
         <nav id="botonera_principal">
             <ul>
                 <li class="flex-item"><a href="index.html">Inicio</a></li>
+                <li><strong>|</strong></li>
                 <li class="flex-item"><a href="nosotros.html">Nosotros</a></li>
+                <li><strong>|</strong></li>
                 <li class="flex-item"><a href="servicios.html">Servicios</a></li>
+                <li><strong>|</strong></li>
                 <li class="flex-item"><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </header>  
     <main>
-        <h2>Dejanos tu consulta</h2>
-        <form action="" method="post" >
-            <fieldset>
-                <legend>Datos Personales</legend>
-                <label> Nombre:
-                    <input type="text" name="nombre">
-                </label>
-                <label> Apellido:
-                    <input type="text" name="apellido">
-                </label>
-                <label>Teléfono:
-                    <input type="tel" name="telefono">
-                </label>
-                <label>Email:
-                    <input type="email" name="email" placeholder="ejemplo@ejemplo.com">
-                </label>
-                <label>Mensaje:
-                    <input type="text" name="mensaje">
-                </label>
-                <input type="submit" name="submit">
-            </fieldset>
-        </form>
+        <div class="centrado">
+            <h2>Donde Encontrarnos</h2>
+        </div>
+
+        <div class="row">
+            <div class="column2">
+                <h3>Contactanos</h3> 
+                    
+                    <form id="myForm" class="myForm">
+                        
+                        <div class="contact"> 
+                          <label for="nombre">Nombre *</label>
+                          <input type="text" id="nombre" placeholder="Ingrese su nombre" >
+                          <p id="falla"></p>
+                  
+                          <label for="apellido">Apellido *</label>
+                          <input type="text" id="apellido" placeholder="Ingrese su apellido" >
+                          <p id="falla2"></p>
+                        
+                      
+                          <label for="email">Email *</label>
+                          <input type="email" id="email" placeholder="Ingrese su email" > 
+                          <p id="falla3"></p>
+
+                          <label for="telefono">Teléfono</label> 
+                          <input type ="number" id="telefono" placeholder="Ingrese su teléfono">
+                          <p id="falla4"></p>
+
+                        </div>
+
+                        <div class="message">
+                            <label for="asunto">Asunto </label> 
+                            <input  type = "text" id="asunto" placeholder="Ingrese el motivo de su consulta" ></input>
+                            
+                            <label for="msg">Mensaje </label> 
+                            <textarea type = "text" id="msg" placeholder="Ingrese su mensaje" rows="6" ></textarea>
+                            
+                          </div>
+                      </form>
+                    <br><br>
+                    
+                    
+                        <span id="requerido">* Campos obligatorios</span>
+                        <div id="boton">
+                            <button id=boton1 onclick= validarDatos()>Enviar</button> 
+                            <input id=boton2 type="button" onclick= "borrar()" value="Borrar Datos">
+                        </div>
+                        <br><br>
+                    </form>
+        
+            
+
+
+
+            </div>
+             <div class="column1">
+                  <img src="images/contact_us.jpg" alt="Contactanos">
+            </div>
+
+    </div>
+
+
+    <!-- <div class="ind-mapa">
+        <iframe class="resp-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.400675643133!2d-58.37908418477063!3d-34.594028380461914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab5dae376a3%3A0x14c7a4758e4a76c0!2sEdificio%20Plaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2scl!4v1634651345537!5m2!1ses!2scl" frameborder="0" style="border:0"></iframe>
+    </div>  -->
+    <div class=row_map>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.614657357079!2d-58.475976784771426!3d-34.563310780469905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb687e65b812f%3A0xd31f87fc7d4da550!2sAv.%20Meli%C3%A1n%202752%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1634868672937!5m2!1ses!2sar" width="2000" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="data">
+        <div class="content">
+            <div class="figs">
+                <img src="images/address.png" alt="Dirección">
+            </div>
+            <div class ="text_figs">
+            <h3>Dirección </h3>
+            <p>Meliáin 2752</p>
+         </div>
+    
+        </div>
+
+        <div class="content">
+            <div class="figs">
+                <img src="images/telephone.png" alt="Teléfono">
+            </div>
+            <div class ="text_figs">
+            <h3>Teléfono </h3>
+            <p>48222222</p>
+         </div>
+    
+        </div>
+
+        <div class="content">
+        <div class="figs">
+            <img src="images/email.png" alt="Email">
+        </div>
+        <div class ="text_figs">
+        <h3>Mail</h3>
+        <p>aid@gmail.com</p>
+     </div>
+
+    </div>
+        
+    </div>
+
     </main>
     <footer>
         <div>
@@ -68,5 +154,6 @@
             </div>
         </div>
     </footer>
+<script src = "contacto.js"></script>  
 </body>
 </html>
