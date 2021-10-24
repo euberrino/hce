@@ -235,6 +235,8 @@
    flex: 1; 
    min-width: 18em;
    border:0;
+   padding: 1em;
+   margin-bottom: 1em;
   }
 
   .message input {

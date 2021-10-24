@@ -8,10 +8,9 @@ function borrar() {
     // Get the value of the input field with id="numb"
     let fields = [[document.getElementById("nombre").value, document.getElementById("falla")] ,[document.getElementById("apellido").value,document.getElementById("falla2")] ];
     let x = document.getElementById("email").value;
-    let y = document.getElementById("asunto").value;
+    let w = document.getElementById("asunto").value;
     let z = document.getElementById("msg").value;
-    let w = document.getElementById("asunto").value
-   
+    
     // If x is Not a Number or less than one or greater than 10
     fields.forEach( e => {
         let text;
